@@ -56,10 +56,8 @@ public class TestAutomation {
     }
 
 
-    public void printPopulation(@NotNull List element){
-        List<WebElement> text = element;
-
-        for (WebElement e : text){
+    public void printPopulation(@NotNull List<WebElement> element){
+        for (WebElement e : element){
             System.out.print(" [ "+e.getText()+" ] ");
         }
         System.out.println("\n");
